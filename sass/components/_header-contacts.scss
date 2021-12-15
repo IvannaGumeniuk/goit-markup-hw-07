@@ -1,0 +1,45 @@
+.header-contacts__link {
+  display: flex;
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $main-text-color;
+
+  transition: color getTransition('time-transit') getTransition('distribution-function');
+}
+
+.header-contacts__link:hover,
+.header-contacts__link:focus {
+  color: $color-accent;
+}
+
+.header-contacts__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+}
+
+.header-contacts__item {
+  display: flex;
+  cursor: pointer;
+
+  transition: color getTransition('time-transit') getTransition('distribution-function');
+}
+
+.header-contacts__item:first-child {
+  margin-right: 50px;
+}
+
+.header-contacts__item:hover,
+.header-contacts__item:focus {
+  color: $color-accent;
+}
+
+.header-contacts__icon {
+  fill: currentColor;
+  margin-right: 10px;
+}

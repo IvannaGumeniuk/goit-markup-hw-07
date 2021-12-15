@@ -8,10 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>Студия</title>
 </head>
@@ -62,36 +58,36 @@
             <div class="container">
                 <h2 class="advantages__header visually-hidden">Наши преимущества</h2>
                 <ul class="advantages__list list">
-                    <li class="advantage__item">
-                        <div class="advatnages__icon-box">
-                            <svg class="advatnages__icon" width="70" height="70">
+                    <li class="advantages__item">
+                        <div class="advantages__box">
+                            <svg class="advantages__icon" width="70" height="70">
                                 <use href="./images/symbol-defs.svg#icon-antenna"></use>
                             </svg>
                         </div>
                         <h3 class="advantages__title">Внимание к деталям</h3>
                         <p class="advantages__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
-                    <li class="advantage__item">
-                        <div class="advatnages__icon-box">
-                            <svg class="advatnages__icon" width="70" height="70">
+                    <li class="advantages__item">
+                        <div class="advantages__box">
+                            <svg class="advantages__icon" width="70" height="70">
                                 <use href="./images/symbol-defs.svg#icon-clock"></use>
                             </svg>
                         </div>
                         <h3 class="advantages__title">Пунктуальность</h3>
                         <p class="advantages__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </li>
-                    <li class="advantage__item">
-                        <div class="advatnages__icon-box">
-                            <svg class="advatnages__icon" width="70" height="70">
+                    <li class="advantages__item">
+                        <div class="advantages__box">
+                            <svg class="advantages__icon" width="70" height="70">
                                 <use href="./images/symbol-defs.svg#icon-diagram"></use>
                             </svg>
                         </div>
                         <h3 class="advantages__title">Планирование</h3>
                         <p class="advantages__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li>
-                    <li class="advantage_item">
-                        <div class="advatnages__icon-box">
-                            <svg class="advatnages__icon" width="70" height="70">
+                    <li class="advantages__item">
+                        <div class="advantages__box">
+                            <svg class="advantages__icon" width="70" height="70">
                                 <use href="./images/symbol-defs.svg#icon-astronaut"></use>
                             </svg>
                         </div>
@@ -347,8 +343,8 @@
                     <p>г. Киев, пр-т Леси Украинки, 26 </p>
                 </address>
                 <ul class="footer__list list">
-                    <li class="footer__item"><a class="footer-link link" href="mailto:info@example.com">info@example.com</a></li>
-                    <li class="footer__item"><a class="footer-link link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                    <li class="footer__item"><a class="footer__link link" href="mailto:info@example.com">info@example.com</a></li>
+                    <li class="footer__item"><a class="footer__link link" href="tel:+380991111111">+38 099 111 11 11</a></li>
                 </ul>
             </div>
 
@@ -406,7 +402,7 @@
                     <form class="footer-form">
                         <label>
                             <p class="footer-form__title footer__title">Подпишитесь на рассылку</p>
-                        <input type="email" name="email" placeholder="E-mail" class="footer-form-input" />
+                        <input type="email" name="email" placeholder="E-mail" class="footer-form__input" />
                         </label>
                         <button type="submit" class="footer-form__btn btn">Подписаться
                             <svg class="footer-form__icon" width="24" height="24">
@@ -420,7 +416,7 @@
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button class="modal-btn" type="button" data-modal-close>
+            <button class="modal__btn" type="button" data-modal-close>
                 <svg width="18" height="18">
                     <use href="./images/symbol-defs.svg#icon-close"></use>
                 </svg>
