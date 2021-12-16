@@ -4,14 +4,14 @@
 
 .nav__item {
   margin-right: 50px;
-}
 
-.nav__item:last-child {
-  margin-right: 0;
-}
+  &:last-child {
+    margin-right: 0;
+  }
 
-.nav__item:first-child {
-  margin-left: 93px;
+  &:first-child {
+    margin-left: 93px;
+  }
 }
 
 .nav__link {
@@ -20,27 +20,26 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: $header-list-color;
-
   transition: color getTransition('time-transit') getTransition('distribution-function');
-}
 
-.nav__link:hover,
-.nav__link:focus {
-  color: $color-accent;
-}
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
 
-.nav__link--active {
-  position: relative;
-  color: $color-accent;
-}
+  &--active {
+    position: relative;
+    color: $color-accent;
+  }
 
-.nav__link--active::after {
-  content: '';
-  position: absolute;
-  bottom: -33px;
-  display: block;
-  width: 100%;
-  height: 4px;
-  background: $color-accent;
-  border-radius: 2px;
+  &--active::after {
+    content: '';
+    position: absolute;
+    bottom: -33px;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: $color-accent;
+    border-radius: 2px;
+  }
 }

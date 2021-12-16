@@ -25,6 +25,19 @@
     margin-top: 4px;
     cursor: pointer;
     transition: border getTransition('time-transit') getTransition('distribution-function');
+
+    &--checkbox {
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      border: 0;
+      padding: 0;
+      clip: rect(0 0 0 0);
+      clip-path: inset (50%);
+      margin: -1px;
+    }
   }
 
   &__input:focus,
@@ -36,13 +49,20 @@
   }
   &__label {
     position: relative;
-
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
     color: $form-label-color;
+    &--checkbox {
+      margin-left: 12px;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      margin-bottom: 30px;
+    }
   }
+
   &__icon {
     position: absolute;
     left: 12px;
@@ -52,6 +72,18 @@
       fill getTransition('time-transit') getTransition('distribution-function');
     width: 18px;
     height: 18px;
+
+    &--checkbox {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      border: $checkbox-border;
+      border-radius: 4px;
+      margin-right: 8px;
+      cursor: pointer;
+      transition: background-image getTransition('time-transit')
+        getTransition('distribution-function');
+    }
   }
 
   &__textarea {
@@ -65,48 +97,14 @@
     padding-left: 16px;
     margin-bottom: 20px;
     cursor: pointer;
-
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
     color: $textarea-color;
-
     resize: none;
   }
 
-  &__label--checkbox {
-    margin-left: 12px;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    margin-bottom: 30px;
-  }
-
-  &__input--checkbox {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset (50%);
-    margin: -1px;
-  }
-
-  &__icon--checkbox {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    border: $checkbox-border;
-    border-radius: 4px;
-    margin-right: 8px;
-    cursor: pointer;
-    transition: background-image getTransition('time-transit')
-      getTransition('distribution-function');
-  }
   .hero-form__input--checkbox:checked + .hero-form__icon--checkbox {
     border-color: transparent;
     background-image: url(../images/icon-check.svg);
