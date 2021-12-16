@@ -16,7 +16,7 @@
     height: 120px;
     margin-bottom: 30px;
     padding: 25px 100px;
-    background-color: #f5f4fa;
+    background-color: $advantages-bg-color;
   }
 
   &__title {
@@ -27,7 +27,7 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: $second-title-color;
+    color: $title-color;
   }
 
   &__text {

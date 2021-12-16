@@ -1,7 +1,7 @@
 @import './logo';
 
 .footer {
-  background-color: #2f303a;
+  background-color: $footer-bg-color;
 
   &__container {
     display: flex;
@@ -20,7 +20,7 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: $footer-logo-color;
+    color: $footer-adress-color;
   }
 
   &__item {
@@ -36,9 +36,9 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: $tex-address-color;
+    color: $footer-contacts-color;
 
-    transition: color var(--time-transit) var(--distribution-function);
+    transition: color getTransition('time-transit') getTransition('distribution-function');
   }
 
   &__link:hover,

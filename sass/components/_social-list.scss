@@ -26,8 +26,8 @@
 }
 
 .social__link--dark {
-  color: #ffffff;
-  background-color: rgba(255, 255, 255, 0.1);
+  color: $icons-hover-color;
+  background-color: $icons-dark-color;
   transition: background-color getTransition('time-transit') getTransition('distribution-function');
 }
 
@@ -38,5 +38,5 @@
 .social__link:hover,
 .social__link:focus {
   background-color: $color-accent;
-  color: #ffffff;
+  color: $icons-hover-color;
 }

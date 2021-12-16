@@ -18,7 +18,7 @@ body {
 }
 
 .section--gray {
-  background-color: #f5f4fa;
+  background-color: $darc-section-color;
 }
 
 .visually-hidden {
@@ -55,6 +55,6 @@ body {
 
   &:hover,
   &:focus {
-    background-color: #188ce8;
+    background-color: $btn-hover-color;
   }
 }
